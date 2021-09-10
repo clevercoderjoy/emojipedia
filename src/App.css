@@ -1,38 +1,210 @@
-.App {
+/* font import */
+
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+
+/* global css variables */
+
+:root {
+  --font-one: "ZCOOL KuaiLe", cursive;
+  --font-two: "Rampart One", cursive;
+}
+
+/* tag h1 */
+
+h1 {
+  font-family: var(--font-two);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  margin: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-one);
+}
+
+.name {
+  color: red;
+}
+
+.emoji-display {
+  cursor: pointer;
+}
+
+.emoji-box {
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  margin: 3rem 5rem;
+  display: block;
+}
+
+.emojis {
+  margin: 0.3rem;
+  display: inline-block;
+}
+
+input {
+  margin: auto;
+  display: block;
+  text-align: center;
+  justify-items: center;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  background: white;
+  padding: 1rem;
+  width: 10rem;
+  font-family: var(--font-one);
+  font-weight: bold;
+}
+
+.placeHolder {
+  color: black;
+}
+
+.emoji {
+  text-align: center;
+  display: block;
+}
+
+.output {
+  margin: 1rem auto;
+  display: block;
+  text-align: center;
+  justify-items: center;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  background: white;
+  padding: 1rem;
+  width: 15rem;
+  height: 1.5rem;
+  font-family: var(--font-one);
+  font-weight: bold;
+}
+
+/* template applied */
+
+/* class about*/
+
+.about {
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 2rem;
+  font-family: var(--font-two);
+}
+
+/* class app */
+
+.app {
+  text-align: center;
+  justify-content: center;
+  display: block;
+  font-weight: bold;
+  font-family: var(--font-one);
+  margin: 0.5rem;
+}
+
+/* link color */
+
+.social-link {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* class social */
+
+.social {
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  justify-content: center;
+}
+
+/* class social-list */
+
+.social-list {
+  display: inline-block;
+  margin: 0.2rem 1rem;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* social link color on hover */
+
+i.fa.fa-linkedin.fa-1x:hover {
+  color: #0077b5;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  background: all black;
+}
+
+i.fa.fa-github.fa-1x:hover {
+  color: #171515;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  background: all black;
+}
+
+i.fa.fa-stack-overflow.fa-1x:hover {
+  color: #ef8236;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  background: all black;
+}
+
+i.fa.fa-twitter.fa-1x:hover {
+  color: #00acee;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  background: all black;
+}
+
+i.fa.fa-whatsapp.fa-1x:hover {
+  color: #075e54;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  background: all black;
+}
+
+i.fa.fa-instagram.fa-1x:hover {
+  color: #c13584;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  background: all black;
+}
+
+/* copyright */
+
+.copyright {
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  margin: 1rem;
+  border: 2px solid black;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  background: white;
+  color: black;
+  font-family: var(--font-one);
+}
+
+.copyright:hover {
+  background: black;
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cr {
+  text-align: center;
 }
